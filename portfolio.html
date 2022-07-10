@@ -12,30 +12,23 @@
 	<meta property="og:image" content="http://bikcraft.com/img/og-image.png" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--exatamente o tamanho do dispositivo-->
 
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<!--oque vem por baixo no css é oque vai escrever por cima, oque vem no nosso CSS vai ser mais importante que do normalize| o ideal é estar tudo dentro de um arquivo só para não carregar muito-->
 	<script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<!--class do grid.css-->
 			<a href="index.html" class="grid-4">
-				<!--grid da logo-->
-				<!--a logo leva para a home-->
 				<img src="img/bikcraft.png" alt="Bikcraft">
 			</a>
 			<nav class="grid-12 header_menu">
-				<!--Grid do menu-->
-				<!--aq começa nossa navegação-->
+
 				<ul>
-					<!--menu é uma lista não ordenada link sem acento e sem letra maiuscula-->
 					<li><a href="sobre.html">Sobre</a></li>
 					<li><a href="produtos.html">Produtos</a></li>
 					<li><a href="portfolio.html" class="menu_ativo">Portfolio</a></li>
@@ -47,9 +40,7 @@
 
 	<!--Introdução-->
 	<section class="introducao-interna interna_portfolio">
-		<!-- intro leva 100%-->
 		<div class="container">
-			<!--container leva 960px por isso coloca-->
 			<h1 data-anime="400" class="fadeInDown">Portfólio</h1>
 			<p data-anime="800" class="fadeInDown">Conheça nossos projetos que amamos mostrar</p>
 		</div>
@@ -78,7 +69,6 @@
 	<!--Portfolio-->
 	<section class="portfolio">
 		<div class="container" data-slide="portfolio">
-			<!--antes ñ usamos div como container mas agr vamos precisar de uma div externa com 100% de um lado e pro outro preto-->
 			<ul class="portfolio_lista">
 				<li class="grid-8"> <img src="img/portfolio/retro.jpg" alt="bicicleta retro"> </li>
 				<li class="grid-8"> <img src="img/portfolio/passeio.jpg" alt="bicicleta passeio"> </li>
@@ -100,7 +90,6 @@
 			<cite>WILLIAM MORRIS</cite>
 		</blockquote>
 	</section>
-	<!--sempre quando expande o maximo de 100% de algo precisamos de uma classe externa antes com 100% e depois o container para manter o conteudo dentro-->
 	<footer>
 		<div class="footer">
 			<div class="container">
@@ -124,7 +113,7 @@
 					<h3>Redes Sociais</h3>
 					<ul>
 						<li><a href="http://facebook.com" target="_blank"> <img src="img/facebook.png" alt="Link para rede social Facebook"></a></li>
-						<li><a href="https://www.instagram.com/khmlwgh/" target="_blank"> <img src="img/instagram.png" alt="Link para rede social Instagram"></a></li>
+						<li><a href="https://www.instagram.com/" target="_blank"> <img src="img/instagram.png" alt="Link para rede social Instagram"></a></li>
 						<li><a href="http://twitter.com" target="_blank"> <img src="img/twitter.png" alt="Link para rede social Twitter"></a></li>
 					</ul>
 				</div>
@@ -133,15 +122,11 @@
 		<div class="copy">
 			<div class="container">
 				<p class="grid-16"> &copy; Bikcraft 2021 - Alguns direitos reservados </p>
-				<!--o container tem 960px se ñ coloca classe nenhuma dentro do container não vai pegar a margem que queremos-->
 			</div>
 		</div>
 	</footer>
-
 	<script src="./js/simple-anime.js"></script>
 	<script src="./js/simple-slide.js"></script>
 	<script src="./js/script.js"></script>
-
 </body>
-
 </html>
